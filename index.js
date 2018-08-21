@@ -16,7 +16,7 @@ function nowServing (current){
   return 'There is nobody waiting to be served!';
 }
 function currentLine (current){
-  var sentence = 'The Line is currently';
+  var sentence = 'The line is currently';
   if (current.length === 0){
     return sentence + ' empty.';
   } else if (current.length === 1){
