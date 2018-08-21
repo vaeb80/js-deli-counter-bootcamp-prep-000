@@ -20,10 +20,13 @@ function currentLine (current){
   if (current.length === 0){
     return sentence + ' empty.';
   } else if (current.length ===1){
-    return sentence + ' empty.';
-  }
-  while (current.length > 1){
-    sentence = sentence + 'This might work';
+    return `Currently serving ${current[0]}.`;
+  } else {
+    var i = 0;
+    sentence = sentence + ':'
+    while ( i < current.length){
+      sentence = sentence + `${i + 1}. ${current[i]}`;
+      i++
   }
   return sentence + ` ${current.length}. ${current[current.length]}`
 }
