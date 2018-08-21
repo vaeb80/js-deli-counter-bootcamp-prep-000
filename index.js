@@ -9,7 +9,7 @@ function takeANumber (current, new_person){
 function nowServing (current){
   var message = []
   if (current.length > 0){
-    customer = current[0]
+    var customer = current[0]
     current = current.splice(current.length - 1)
     return customer
   }
