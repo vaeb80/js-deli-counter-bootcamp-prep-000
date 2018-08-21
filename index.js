@@ -24,7 +24,7 @@ function currentLine (current){
   } else {
     var i = 0;
     sentence = sentence + ':'
-    while ( i < current.length){
+    while ( i <= current.length - 1){
       sentence = sentence + ` ${i + 1}. ${current[i]},`;
       i++
   }
