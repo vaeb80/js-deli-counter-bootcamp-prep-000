@@ -28,6 +28,6 @@ function currentLine (current){
       sentence = sentence + ` ${i}. ${current[ i - 1]},`;
       i++
   }
-  return sentence + ` ${current.length}. ${current[current.length]}`
+  return sentence + ` ${current.length}. ${current[current.length - 1]}`
   }
 }
