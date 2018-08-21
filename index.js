@@ -3,5 +3,6 @@ function takeANumber (current, new_person){
     current[0] = new_person;
   } else {
     current.push(new_person)
+  }
   return console.log(`Welcome, ${new_person}. You are number ${current.length + 1} in line.`)
 }
