@@ -7,7 +7,6 @@ function takeANumber (current, new_person){
   return `Welcome, ${new_person}. You are number ${current.length } in line.`;
 }
 function nowServing (current){
-  var message = [];
   if (current.length > 0){
     var customer = current[0];
     current.shift();
