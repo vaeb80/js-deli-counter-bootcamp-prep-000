@@ -10,7 +10,7 @@ function nowServing (current){
   var message = []
   if (current.length > 0){
     var customer = current[0]
-    current = current.splice(0, current.length)
+    current = current.splice(0, current.length - 1)
     return `Currently serving ${customer}.`
   }
   return 'There is nobody waiting to be served!'
