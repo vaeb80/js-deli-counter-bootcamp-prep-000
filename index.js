@@ -19,7 +19,7 @@ function currentLine (current){
   var sentence = 'The Line is currently';
   if (current.length === 0){
     return sentence + ' empty.';
-  } else if (current.length ===1){
+  } else if (current.length === 1){
     return `Currently serving ${current[0]}.`;
   } else {
     var i = 0;
