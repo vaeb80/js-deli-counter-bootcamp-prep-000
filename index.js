@@ -15,3 +15,14 @@ function nowServing (current){
   }
   return 'There is nobody waiting to be served!'
 }
+function currentLine (current){
+  var sentence = 'The line is currently:'
+  for ( var i = 0 ; i < current.length ; i++){
+    if (i < current.length){
+    sentence = sentence + ` ${i + 1}. ${current[i]},`
+    } else {
+      sentence = sentence + 
+    }
+  
+  }
+}
