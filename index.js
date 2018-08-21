@@ -6,3 +6,12 @@ function takeANumber (current, new_person){
   }
   return console.log(`Welcome, ${new_person}. You are number ${current.length + 1} in line.`)
 }
+function nowServing (current){
+  var message = []
+  if (current.length > 0){
+    customer = current[0]
+    current = current.splice(current.length - 1)
+    return customer
+  }
+  return 'There is nobody waiting to be served!'
+}
