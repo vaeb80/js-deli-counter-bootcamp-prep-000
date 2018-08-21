@@ -1,4 +1,5 @@
 function takeANumber (current, new){
-  current.push(new)
-  return console.log(`Welcome, ${new}. You are number ${current.length + 1} in line.`)
+  var temp =[]
+  temp.concat(current)
+  return console.log(`Welcome, ${new}. You are number ${temp.length + 1} in line.`)
 }
