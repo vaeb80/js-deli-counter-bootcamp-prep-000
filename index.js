@@ -20,5 +20,5 @@ function currentLine (current){
   while (current.length >= 1){
     return sentence + 'This might work';
   }
-  return sentence + ' empty';
+  return sentence + ' empty.';
 }
