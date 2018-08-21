@@ -29,4 +29,5 @@ function currentLine (current){
       i++
   }
   return sentence + ` ${current.length}. ${current[current.length]}`
+  }
 }
