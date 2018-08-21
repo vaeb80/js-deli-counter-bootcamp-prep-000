@@ -22,10 +22,10 @@ function currentLine (current){
   } else if (current.length === 1){
     return `Currently serving ${current[0]}.`;
   } else {
-    var i = 0;
+    var i = 1;
     sentence = sentence + ':'
-    while ( i < current.length - 1){
-      sentence = sentence + ` ${i + 1}. ${current[i]},`;
+    while ( i < current.length){
+      sentence = sentence + ` ${i}. ${current[ - 1]},`;
       i++
   }
   return sentence + ` ${current.length}. ${current[current.length]}`
