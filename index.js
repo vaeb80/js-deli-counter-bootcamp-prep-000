@@ -1,5 +1,5 @@
 function takeANumber (current, new_person){
-  if(current == 0){  
+  if(current.length == 0){  
     current[0] = new_person;
   } else {
     current.push(new_person)
